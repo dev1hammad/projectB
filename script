@@ -1,6 +1,6 @@
 document.getElementById("yesButton").addEventListener("click", function() {
     // Change the cat image to a happy one
-    document.getElementById("catImage").src = "happy-cat.jpg";
+    document.getElementById("catImage").src = "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2UzNDNsd2p3dGwzaXMxMTM1d2Y2ZWFmejV2N2Z3bGxodTFyZXAzbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KmxmoHUGPDjfQXqGgv/giphy.gif";
     document.getElementById("catImage").style.transform = "scale(1.1)"; // Optional effect
     this.disabled = true; // Disable the "Yes" button after it's clicked
 });
