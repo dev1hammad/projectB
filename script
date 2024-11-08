@@ -1,0 +1,16 @@
+document.getElementById("yesButton").addEventListener("click", function() {
+    // Change the cat image to a happy one
+    document.getElementById("catImage").src = "happy-cat.jpg";
+    document.getElementById("catImage").style.transform = "scale(1.1)"; // Optional effect
+    this.disabled = true; // Disable the "Yes" button after it's clicked
+});
+
+document.getElementById("noButton").addEventListener("click", function() {
+    // Make the "No" button float away when clicked
+    this.classList.add("floating");
+
+    // Disable the button to prevent further clicks
+    setTimeout(() => {
+        this.disabled = true;
+    }, 2000); // Wait for the animation to run before disabling
+});
